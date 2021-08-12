@@ -1,0 +1,837 @@
+
+h3 {
+  text-align: center;
+  padding: 2% 0 3%;
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+/*Home page*/
+.home {
+  background: url("images/backgroundImage.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: blur(0.45px);
+  align-items: center;
+  z-index: -1;
+}
+
+.navbar-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.navbar-brand {
+  padding-left: 2%;
+}
+
+.navbar-nav {
+  padding-right: 10%;
+}
+
+.nav-item {
+  color: white;
+  padding: 0 1%;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.navbarImg {
+  height: 40px;
+  width: 40px;
+  margin-right: 7px;
+}
+
+
+.introduction {
+  padding: 12% 15% !important;
+  text-align: center;
+}
+
+.homeH1 {
+  line-height: 40px;
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 4px;
+  color: white !important;
+  font-size: 1.7rem;
+}
+
+.homeH4 {
+  line-height: 60px;
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 3.5px;
+  color: white !important;
+  font-size: 1.2rem;
+}
+
+.homePara {
+  font-family: 'Concert One', cursive;
+  font-weight: 100;
+  color: #DDDDDD;
+  padding: 2% 0;
+  font-size: 1.25rem;
+}
+
+.fa-chevron-circle-down {
+  color: #FF8303;
+  font-size: 1rem;
+  padding: 2px;
+}
+
+.scroll-down.mouse {
+  height: 100px;
+}
+
+.scroll-down.mouse span {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 60px;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  margin: 2%;
+  top: 50px;
+}
+
+@keyframes animateMousePointer {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: .6;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.scroll-down.mouse.effect1 span::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background: #fff;
+  animation: animateMousePointer 1.5s infinite;
+}
+
+.fabHomePage {
+  color: white;
+  font-size: 20px;
+  border: 1px solid #787A91;
+  margin: 0.5%;
+  padding: .7%;
+}
+
+.fabHomePage:hover {
+  background-color: #2940D3;
+  color: white;
+  font-size: 20px;
+  border: 1px solid #2940D3;
+  margin: 0.5%;
+  padding: .7%;
+}
+
+.glow {
+  color: #FB9300;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 8px #fff, 0 0 12px #FF7600, 0 0 17px #FF7600;
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #FFA900, 0 0 15px #FFA900, 0 0 20px #FFA900;
+  }
+}
+
+.creativenav_SD ul>li {
+  list-style: outside none none;
+  display: inline-block;
+}
+
+.creativenav_SD ul>li a {
+  color: white !important;
+  position: relative;
+  float: left;
+  display: block;
+  overflow: hidden;
+  z-index: 1000;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.2s cubic-bezier(.75, .06, .27, .98);
+  -moz-transition: all 0.2s cubic-bezier(.75, .06, .27, .98);
+  -ms-transition: all 0.2s cubic-bezier(.75, .06, .27, .98);
+  -o-transition: all 0.2s cubic-bezier(.75, .06, .27, .98);
+  transition: all 0.2s cubic-bezier(.75, .06, .27, .98);
+}
+
+.creativenav_SD ul>li a:hover {
+  -webkit-transition: all 0.4s cubic-bezier(.75, .06, .27, .98);
+  -moz-transition: all 0.4s cubic-bezier(.75, .06, .27, .98);
+  -ms-transition: all 0.4s cubic-bezier(.75, .06, .27, .98);
+  -o-transition: all 0.4s cubic-bezier(.75, .06, .27, .98);
+  transition: all 0.4s cubic-bezier(.75, .06, .27, .98);
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: inset 0px -3px 0px rgba(255, 255, 255, 0.8), inset 0px 400px 0px #FB9300;
+  -moz-box-shadow: inset 0px -3px 0px rgba(255, 255, 255, 0.8), inset 0px 400px 0px #FB9300;
+  box-shadow: inset 0px -3px 0px rgba(255, 255, 255, 0.8), inset 0px 400px 0px #FB9300;
+}
+
+/*About me */
+#AboutMe {
+  width: 100%;
+  text-align: center;
+  padding: 4% 3% 7%;
+  background-color: #F9F9F9;
+}
+
+.AboutMeTitle {
+  padding: 2% 0;
+  border-bottom: 7px double !important;
+  border-color: #10316B !important;
+}
+
+.MyselfImage {
+  border-radius: 18px;
+  width: 370px !important;
+  height: 395px !important;
+  margin-top: 5%;
+  box-shadow: 0px 0px 10px black;
+  border: solid 5px black;
+  transition: border 0.6s linear;
+}
+
+.MyselfImage:hover {
+  border: solid 14px #10316B;
+}
+
+.PersonalDetails {
+  font-family: 'Chakra Petch', sans-serif;
+  padding: 4% 10% 4% 4% !important;
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.AboutMebtn {
+  font-size: 0.75rem !important;
+  letter-spacing: 2px;
+  background: #10316B !important;
+  border-color: #10316B !important;
+  font-family: 'Russo One', sans-serif;
+  margin-top: 5% !important;
+}
+
+.AboutMebtn:hover {
+  color: white !important;
+  background: #F6830F !important;
+  border-color: #F6830F !important;
+  box-shadow: 0 0 15px #F6830F;
+}
+
+/*Education*/
+.Education {
+  padding: 2% 0 7%;
+}
+
+.Education .card {
+  text-align: center;
+  padding: 2%;
+  border-radius: 20px !important;
+  box-shadow: 0px 0px 10px black;
+  background-image: linear-gradient(#F98404, #F9B208, #F9B208, #F98404);
+}
+
+.card h4 {
+  font-family: 'Russo One', sans-serif;
+  color: #440A67;
+  font-size: 1.2rem;
+  padding: 2% 1% 0;
+}
+
+.Education .card p {
+  color: #FFFFC7;
+  font-family: 'Merriweather', serif;
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0.8% 0.8% 1.2%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2 {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #21094E;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-2 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-2::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-image: linear-gradient(#23049D, #AA2EE6, #FF79CD);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left-2 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right-2 {
+  text-align: left;
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 28px;
+  border: medium solid #21094E;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #21094E;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 28px;
+  border: medium solid #21094E;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #21094E transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-2::after {
+  left: -14px;
+}
+
+/*Skills*/
+.SkillsIcon {
+  margin: 2%;
+  font-size: 25px;
+  height: 25px;
+  width: 25px;
+  color: black;
+}
+
+.SkillsContainer {
+  background-image: linear-gradient(#52006A, #CD113B, #FFA900);
+  padding-top: 3%;
+  padding-bottom: 6%;
+  background-color: grey;
+}
+
+.SkillsContainer row {
+  padding: 2% 10%;
+  font-size: 1rem;
+}
+
+.SkillsBlock {
+  margin: auto;
+  width: 80%;
+  border-radius: 14px;
+  box-shadow: 0 0 10px black;
+  background-color: #F5F5F5;
+  padding: 3% 1%;
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+}
+
+.skills {
+  padding: 1% 5%;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 10px;
+  height: 20%;
+  width: 40% !important;
+  margin: 2% auto;
+}
+
+.skills:hover {
+  box-shadow: 5px 5px 15px #52006A;
+}
+
+.Percent {
+  float: right;
+  padding-right: 5%;
+  padding-top: 2%;
+}
+
+/*Projects*/
+#ProjectsSection {
+  padding: 2% 5% 8%;
+  background-color: #F6F5F5;
+}
+
+.ProjectTitle {
+  padding: 4%;
+  color: #F6830F;
+}
+
+.ProjectRow {
+  justify-content: center;
+}
+
+.Projects .card {
+  text-align: center;
+  align-items: center;
+  margin: 2% 5%;
+  border-radius: 18px !important;
+  box-shadow: 0 0 10px black;
+  background-image: linear-gradient(#A6B1E1, #DCD6F7, #F4EEFF);
+}
+
+.Projects .card:hover {
+  border-radius: 18px !important;
+  box-shadow: 0px 0px 30px #002366;
+  background-image: linear-gradient(#A6B1E1, #DCD6F7, #F4EEFF);
+}
+
+.Projects h5 {
+  padding: 1%;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.2rem;
+}
+
+.Projects p {
+  padding: 2% 1% 4%;
+  font-family: 'Merriweather', serif;
+  font-size: 0.7rem;
+}
+
+.Projects .btn {
+  padding: 3%;
+  margin: 2%;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1rem;
+  background-color: #3F3697;
+  border-color: #3F3697;
+}
+
+.Projects .btn:hover {
+  box-shadow: 0 0 10px #151965;
+  background-color: #151965;
+  border-color: #151965;
+}
+
+.ProjectImages {
+  height: 200px;
+  width: 287px;
+  border-radius: 20px;
+}
+
+/*Achievements*/
+.Achievements {
+  background-image: linear-gradient(#52006A, #CD113B, #FFA900);
+  color: white;
+  height: 70%;
+  max-height: 70%;
+  padding: 2% 0;
+}
+
+.AchievementTitle {
+  font-size: 1.75rem;
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+.carousel-item p {
+  padding: 1% 20% 4% !important;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: light;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.carousel-item h5 {
+  padding: 1% !important;
+  font-family: 'Concert One', cursive;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #52006A;
+}
+
+.AchievementImage {
+  height: 320px !important;
+  width: 550px !important;
+}
+
+/*Contact-me*/
+.Contact .btn {
+  background-color: #002366;
+  font-size: 1rem;
+}
+
+.FooterContainer {
+  background-color: #DBE6FD;
+  padding: 3% 3% 6%;
+}
+
+.Contact {
+  width: 70%;
+  background-color: white;
+  padding: 3%;
+  margin: auto;
+  box-shadow: 0 0 20px black;
+}
+
+.ContactMeImage {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 3%;
+}
+
+.Contact .row .mb-3 {
+  padding: 2%;
+}
+
+.Contact .btn {
+  margin: 2%;
+}
+
+.input-icons .icons {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.icons {
+  padding: 3%;
+  min-width: 40px;
+  font-size: 16px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 2% 10% !important;
+}
+
+/*Footer*/
+.footer {
+  background-color: #0A043C;
+  padding: 3% 10% 0;
+  color: white;
+}
+
+.footer h4 {
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.fabFooter {
+  color: #0A043C;
+  background-color: white;
+  font-size: 1rem;
+  border-radius: 100%;
+  padding: 1.5%;
+  border: 1px solid white;
+  margin: 2% 2% 5% 0;
+}
+
+.fabFooter:hover {
+  border-color: #F6830F;
+  color: white;
+  background-color: #F6830F;
+}
+
+.footer row {
+  padding: 3%;
+}
+
+.contactFooter {
+  padding: 3% 0;
+}
+
+.ContactBlog h4 {
+  padding: 0 0 2%;
+}
+
+.ContactBlog p {
+  font-family: 'Merriweather', serif;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.footerPageLink {
+  text-decoration: none;
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.footerPageLink:hover {
+  color: #F6830F !important;
+}
+
+.footer h6 {
+  text-align: center;
+  padding: 1%;
+  border-top: 1px solid grey;
+}
+
+/*Media Queries*/
+/*Max-width :1080px */
+@media (max-width:1080px) {
+  h3 {
+    padding: 5%;
+  }
+
+  /*Home */
+  .introduction {
+    padding-bottom: 30% !important;
+    padding-top: 15% !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+
+  .homeH4 {
+    font-size: 1.5rem;
+  }
+
+  .homeH1 {
+    font-size: 1.6rem;
+  }
+
+  .homePara {
+    padding: 3%;
+    font-size: 1rem;
+  }
+
+  /*Education*/
+  .Education-Details {
+    text-align: center;
+  }
+
+  .Education-Image {
+    width: 70%;
+    height: 70%;
+    padding-bottom: 2%;
+  }
+
+  /*Projects*/
+  .Projects {
+    padding: 7%;
+  }
+
+  .card {
+    margin: 6% 5% !important;
+  }
+
+  /*Contact*/
+  .FooterContainer {
+    padding: 3% 3% 12%;
+  }
+
+  /*Footer*/
+  .footer {
+    padding: 3% 10%;
+  }
+
+  .ContactBlog h4 {
+    padding: 5% 0;
+  }
+}
+
+/*Max-width : 992px */
+@media screen and (max-width: 992px) {
+
+  /*About*/
+  .PersonalDetails {
+    text-align: center;
+  }
+
+  .fabHomePage {
+    padding: 1.3%;
+  }
+
+  .TimelineContainer {
+    padding: 2% !important;
+  }
+
+  /* Place the timelime to the left */
+  .main-timeline-2::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-2::before {
+    left: 60px;
+    border: medium solid #21094E;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #21094E transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-2::after,
+  .right-2::after {
+    left: 18px;
+  }
+
+  .left-2::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-2 {
+    left: 0%;
+  }
+
+  /* Skills */
+  .SkillsContainer {
+    padding: 10%;
+  }
+
+  .skills {
+    padding: 3%;
+    width: 80% !important;
+    margin: 2% auto !important;
+  }
+
+  /*Achievements*/
+  .Achievements {
+    padding: 5%;
+  }
+
+  .AchievementTitle {
+    font-size: 1.5rem;
+  }
+
+  .carousel-item p {
+    padding: 3% 4% 10% !important;
+    font-size: 0.8rem;
+  }
+
+  .carousel-item h5 {
+    padding: 2% !important;
+    font-size: 1.2rem;
+  }
+
+  .AchievementImage {
+    height: 60% !important;
+    width: 70% !important;
+  }
+}
+
+
+/*Max-width :600px */
+@media (max-width:600px) {
+  h3 {
+    padding: 8% 0 8% !important;
+  }
+
+  /*Home */
+  .introduction {
+    padding-bottom: 40% !important;
+    padding-top: 25% !important;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+  }
+
+  .homeH4 {
+    font-size: 1.3rem;
+  }
+
+  .homeH1 {
+    font-size: 1.5rem;
+    padding: 2%;
+  }
+
+  .homePara {
+    padding: 3%;
+    font-size: 1rem;
+  }
+
+  .scroll-down.mouse span {
+    top: 70px;
+    margin: 6%;
+  }
+
+  /*About*/
+  .AboutMeContainer {
+    text-align: center !important;
+  }
+
+  .MyselfImage {
+    margin: 10% 0;
+  }
+
+  /*Achievements*/
+  .carousel-item h5 {
+    padding: 5% !important;
+    font-size: 1rem;
+  }
+
+  .carousel-item p {
+    font-size: 0.75rem;
+  }
+
+  /*Achievements*/
+  .Achievements {
+    padding: 10% !important;
+  }
+}
+/*styles.css ends here*/
